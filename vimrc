@@ -1,4 +1,3 @@
-
 "executes pathogen runtime path manager for keeping config hassle free
 execute pathogen#infect()
 
@@ -16,8 +15,13 @@ Helptags
 "this colorscheme is pulled from .vim/bundle 
 colorscheme gruvbox 
 set background=dark
+"maintain transparency"
+hi Normal guibg=NONE ctermbg=NONE 
 
 set number relativenumber 
+
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+set t_Co=256
 
 set laststatus=2         "Enable status bar"
 set statusline=File:     "Label"
